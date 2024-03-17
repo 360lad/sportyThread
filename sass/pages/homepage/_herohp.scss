@@ -1,0 +1,19 @@
+.home__products{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3em;
+}
+.display__products{
+    background-color: #808080;
+    padding: 2em;
+}
+.display__products img{
+    background-color: #808080;
+}
+.add__btn{
+    padding: 1em 3em;
+    background-color:#F3F3F3;
+    border: none;
+    border-radius: 3%;
+}

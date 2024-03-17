@@ -1,12 +1,24 @@
-.nav {
+nav {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     
-    .nav__center ul{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      list-style-type: none;
-    }
+  
+    
   }
+
+  .nav__center ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    // text-decoration: none;
+    display: inline-block;
+    margin: 1em 2em;
+  }
+
+.nav__center ul li a{
+  text-decoration: none;
+  color: gray;
+  // justify-content: space-between;
+}

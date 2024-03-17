@@ -10,7 +10,9 @@
 @use "./sass/pages/shoppage/footersp";
 
 
-body {
+@use "./sass/pages/contactpage/herocp";
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
