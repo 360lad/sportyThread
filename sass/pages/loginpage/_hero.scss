@@ -6,7 +6,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    .log__inpt{
+    .log__name{
+        padding: 2em;
+        margin: 2em;
+        outline:none;
+        border: 2px solid grey;
+        border-radius: 5%;
+    }
+    .log__email{
         padding: 2em;
         margin: 2em;
         outline:none;

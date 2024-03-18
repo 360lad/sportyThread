@@ -4,7 +4,14 @@
   align-items: center;
   justify-content: center;
 }
-.login__info .log__inpt {
+.login__info .log__name {
+  padding: 2em;
+  margin: 2em;
+  outline: none;
+  border: 2px solid grey;
+  border-radius: 5%;
+}
+.login__info .log__email {
   padding: 2em;
   margin: 2em;
   outline: none;
@@ -22,6 +29,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  border-bottom: 2px solid gray;
 }
 
 .nav__center ul li {
@@ -38,6 +46,11 @@ nav {
   color: gray;
 }
 
+.homepage__video video {
+  width: 100%;
+  height: 50%;
+}
+
 .home__products {
   display: flex;
   align-items: center;
@@ -46,35 +59,35 @@ nav {
 }
 
 .display__products {
-  background-color: #808080;
   padding: 2em;
-}
-
-.display__products img {
-  background-color: #808080;
+  background-image: linear-gradient(-45deg, gray, #fff);
+  text-align: center;
 }
 
 .add__btn {
   padding: 1em 3em;
-  background-color: #F3F3F3;
+  background: gray;
   border: none;
   border-radius: 3%;
-}
-
-.footer__input {
-  padding: 2em;
-  outline: none;
-  margin-left: 3em;
-}
-
-.submit__btn {
-  padding: 2em;
-  background-color: #808080;
 }
 
 footer {
   display: flex;
   justify-content: space-between;
+}
+footer .footer__input {
+  padding: 2em;
+  outline: none;
+  margin-left: 3em;
+}
+footer p {
+  margin: 1em 3em;
+}
+footer .submit__btn {
+  padding: 2em;
+  background-color: #808080;
+  border: none;
+  border-radius: 5%;
 }
 
 .contact__details {
@@ -106,6 +119,76 @@ h1 {
   border-radius: 3%;
 }
 
+.registration__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.registration__info .reg__name {
+  padding: 1.5em;
+  margin: 1.5em;
+  outline: none;
+  border: 2px solid grey;
+}
+.registration__info .reg__email {
+  padding: 1.5em;
+  margin: 1em;
+  outline: none;
+  border: 2px solid grey;
+}
+.registration__info .reg__number {
+  padding: 1.5em;
+  margin: 1em;
+  outline: none;
+  border: 2px solid grey;
+}
+.registration__info .reg__adress {
+  padding: 1.5em;
+  margin: 1em;
+  outline: none;
+  border: 2px solid grey;
+}
+.registration__info .reg__password {
+  padding: 1.5em;
+  margin: 1em;
+  outline: none;
+  border: 2px solid grey;
+}
+.registration__info .reg__passwordconfirmation {
+  padding: 1.5em;
+  margin: 1em;
+  outline: none;
+  border: 2px solid grey;
+}
+.registration__info .regin__btn {
+  padding: 2em 3em;
+  background-color: orange;
+  border: none;
+  border-radius: 5%;
+}
+
+.registration__info input {
+  width: 120%;
+}
+
+.registration__paragraph {
+  text-align: center;
+}
+
+.reg__btn {
+  padding: 2em 3em;
+  background-color: gray;
+  border: none;
+  border-radius: 5%;
+  color: #fff;
+  text-decoration: none;
+}
+.reg__btn .reg__btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -113,5 +196,6 @@ h1 {
 }
 
 .container {
-  width: 90%;
+  width: 100%;
+  margin: 0 auto;
 }

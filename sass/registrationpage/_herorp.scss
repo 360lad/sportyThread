@@ -1,0 +1,76 @@
+
+
+
+.registration__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .reg__name{
+        padding: 1.5em;
+        margin: 1.5em;
+        outline:none;
+        border: 2px solid grey;
+        // border-radius: 5%;
+    }
+    .reg__email{
+        padding: 1.5em;
+        margin: 1em;
+        outline:none;
+        border: 2px solid grey;
+        // border-radius: 5%;
+    }
+    .reg__number{
+        padding: 1.5em;
+        margin: 1em;
+        outline:none;
+        border: 2px solid grey;
+        // border-radius: 5%;
+    }
+    .reg__adress{
+        padding: 1.5em;
+        margin: 1em;
+        outline:none;
+        border: 2px solid grey;
+        // border-radius: 5%;
+    }
+    .reg__password{
+        padding: 1.5em;
+        margin: 1em;
+        outline:none;
+        border: 2px solid grey;
+        // border-radius: 5%;
+    }
+    .reg__passwordconfirmation{
+        padding: 1.5em;
+        margin: 1em;
+        outline:none;
+        border: 2px solid grey;
+        // border-radius: 5%;
+    }
+    .regin__btn{
+        padding: 2em 3em;
+        background-color: orange;
+        border: none;
+        border-radius: 5%;
+    }
+
+}
+.registration__info input{
+    width: 120%;
+}
+.registration__paragraph{
+    text-align: center;
+}
+.reg__btn{
+    padding: 2em 3em;
+    background-color: gray;
+    border: none;
+    border-radius: 5%;
+    color: #fff;
+    text-decoration: none;
+    .reg__btn a{
+        text-decoration: none;
+        color: #fff;
+    }
+}
