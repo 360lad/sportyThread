@@ -6,7 +6,7 @@ const logInDetails={
 //    name: logInName;
 //    emial: logInEmail;
 };
-localStorage.setItem("logInDetails",JSON.stringify(logInDetails))
+// localStorage.setItem("logInDetails",JSON.stringify(logInDetails))
 
 
 
