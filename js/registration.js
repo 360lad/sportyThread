@@ -8,8 +8,8 @@
 const regInputs = document.querySelectorAll("input");
 const submitButton = document.querySelector(".reg__btn");
 const message = document.querySelector(".notification");
-const properties=[]
-console.log(message);
+let isValidated;
+// console.log(message);
 // alert("hello")
 submitButton.addEventListener("click", () => {
   let users = [];
@@ -34,7 +34,6 @@ submitButton.addEventListener("click", () => {
       message.textContent = "The passwords do not match";
     } else {
       if (input.name !== "confirm") {
-        properties.push(input.name)
         user[`${input.name}`] = input.value;
         input.style.border = "1px solid gray";
       }
@@ -50,6 +49,14 @@ submitButton.addEventListener("click", () => {
     //   }
     }
   });
+
+
+
+  if(message.textContent.toLowerCase()===""){
+    isValidated=true
+  }
+  if(isValidated){
+
 
   //   Save user to Local Storage
   if (localStorage.getItem("users") === null) {
@@ -67,7 +74,7 @@ submitButton.addEventListener("click", () => {
   
 
 
- 
+}
 });
 
 

@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
 }
-.login__info .log__name {
+.login__info .log__password {
   padding: 2em;
   margin: 2em;
   outline: none;
@@ -23,6 +23,11 @@
   background-color: orange;
   border: none;
   border-radius: 5%;
+}
+
+.login__message {
+  color: RED;
+  font-size: bolder;
 }
 
 nav {
