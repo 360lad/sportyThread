@@ -15,13 +15,23 @@ logInBtn.addEventListener("click", () => {
         
         window.location.href="index.html"
     }
-    else{
+    else if(data.password !== logInPassword.value){
         logInMessage.textContent="wrong Password***"
+        console.log("incorrect password")
     }
 }
-else{
-    logInMessage.textContent="No account with that email!!!"
+else if(!Object.values(data).includes(logInEmail.value)){
+        console.log("No account with that email!!!")
+
+            logInMessage.textContent="No account with that email!!!"
 }
+
+
+
+
+// else{
+//     console.log("No account with that email!!!")
+// }
   });
 });
 
