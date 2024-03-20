@@ -1,0 +1,31 @@
+.products__form{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    // border: 2px solid gray;
+    border-radius: 5%;
+    box-shadow: 10px 5px 10px 5px gray;
+    width: 50%;
+}
+.product__input{
+    padding: 1em;
+    border: 2px solid gray;
+    outline: none;
+    border: 5%;
+
+}
+.product__data{
+    display: flex;
+    align-items: center;
+    margin:1em;
+}
+.form__btn{
+    padding: 2em;
+    color: #fff;
+    background-color: gray;
+    border-radius: 5%;
+    border: none;
+    margin: 2em;
+
+}

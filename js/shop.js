@@ -1,5 +1,0 @@
- const shopProducts=[
-    {
-        img:""
-    }
- ]

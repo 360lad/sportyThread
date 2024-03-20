@@ -3,22 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>form</title>
 </head>
 <body>
     <form action="">
         <div class="products__form">
+            <div class="product__data">
   <label for="images">Product image:</label>
-            <input type="file" class="product__image" name="image">
-
+            <input type="file" class="product__input product__image" name="image" >
+        </div>
+        <div class="image-list"></div>
+        <div class="product__data">
+        <!-- <img src="" alt=""> -->
+        <div>
         <label for="name">Product Name:</label>
-        <input type="text" class="product__input" name="name">
-        <label for="price">Product Price:</label>
-        <input type="text" class="product__input" name="price">
-<label for=""></label>
-        <input type="text" class="product__input">
+    </div>
+        <input type="text" class="product__input product__name" name="name">
+    </div>
+        <div class="product__data">
+            <div>      
+                  <label for="price">Product Price:</label>
+            </div>
 
-    </form>
+        <input type="text" class="product__input product__description" name="description">
+    </div>
+    <div class="product__data">
+        <div>      
+              <label for="price">Product Price:</label>
+        </div>
+
+    <input type="text" class="product__input product__price" name="price">
 </div>
+            <div>
+<button class="form__btn">Add product</button>
+</div>
+
+        
+
+
+    </div>
+    </form>
+    <!-- <div class="images"></div> -->
 </body>
+<script src="js/form.js"></script>
 </html>

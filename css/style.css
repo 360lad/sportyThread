@@ -67,6 +67,7 @@ nav {
   padding: 2em;
   background-image: linear-gradient(-45deg, gray, #fff);
   text-align: center;
+  height: 400px;
 }
 
 .add__btn {
@@ -198,6 +199,38 @@ h1 {
   color: red;
   margin: 1em 0;
   font-weight: bolder;
+}
+
+.products__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
+  box-shadow: 10px 5px 10px 5px gray;
+  width: 50%;
+}
+
+.product__input {
+  padding: 1em;
+  border: 2px solid gray;
+  outline: none;
+  border: 5%;
+}
+
+.product__data {
+  display: flex;
+  align-items: center;
+  margin: 1em;
+}
+
+.form__btn {
+  padding: 2em;
+  color: #fff;
+  background-color: gray;
+  border-radius: 5%;
+  border: none;
+  margin: 2em;
 }
 
 * {
