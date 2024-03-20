@@ -33,8 +33,30 @@ productImage.addEventListener("change", (e) => {
 });
 
 
+let singleProduct={
+  image:productImage.value,
+  name:productName.value,
+  descrption:productDescription.value,
+}
+
+
 document.querySelector(".form__btn").addEventListener("click", (e)=>{
-    e.preventDefault()
+    // e.preventDefault()
+    function upadateShopItems(){
+      shopProducts.map((singleProducts)=>{
+        let shopItem=document.createElement("div")
+        shopItem.classList.add(".home__products")
+        shopItem.innerHTML=`
+        <div class="display__products">
+          <img src=${imageUrl}">
+          <h5>${productName}</h5>
+          <p>Ksh.${productprice}</p>
+          <button class="add__btn">Add to cart</button>
+      </div>`
+  
+     } ) 
+  
+  }
 
     // console.log(imageUrl)
     // document.querySelector(".images").innerHTML=`
@@ -42,13 +64,7 @@ document.querySelector(".form__btn").addEventListener("click", (e)=>{
     // `
 })
 
-let singleProduct={
-    image:productImage.value
-    name:productName.value
-}
 
-function upadateShopItems(){
 
-}
   
 
