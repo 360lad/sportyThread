@@ -91,10 +91,18 @@ cartSection.addEventListener("click", function (e) {
   if (e.target.classList.contains("increament")) {
     const currentQuantityElement = e.target.previousElementSibling;
     currentQuantityElement.textContent++;
+    const price = currentQuantityElement.previousElementSibling.parentElement.previousElementSibling.textContent.replace("Ksh. Ksh.", "");
+    const total = currentQuantityElement.nextElementSibling.parentElement.nextElementSibling
+
+    total.textContent = `Ksh. ${parseInt(currentQuantityElement.textContent) * parseInt(price)}`
+    console.log(total)
   } else if (e.target.classList.contains("decreament")) {
     const nextQuantityElement = e.target.nextElementSibling;
     if (nextQuantityElement.textContent > 1) {
-      nextQuantityElement.textContent--;
+    //   nextQuantityElement.textContent--;
+
+    // const price = currentQuantityElement.previousElementSibling.parentElement.previousElementSibling.textContent.replace("Ksh. Ksh.", "");
+    // const total = currentQuantityElement.nextElementSibling.parentElement.nextElementSibling
     }
   }
 
@@ -109,7 +117,7 @@ function updatePrices() {
   for (let p = 0; p < cartItemProducts.length; p++) {
     let itemElement = cartItemProducts[p];
     //   console.log(itemElement)
-    const itemName = itemElement.querySelector("h5").textContent;
+    const itemName = itemElement.querySelector("p").textContent;
     //   console.log(itemName);
     let item = cartItems.find((element) => element.name === itemName);
 
@@ -124,9 +132,10 @@ function updatePrices() {
       );
       console.log(price)
       let addedPrice = quantity * price;
-      itemElement.querySelector(".newPrice").textContent = addedPrice;
+      itemElement.querySelector(".newPrice").textContent = addedPrice
       totalPrice += addedPrice;
     }
   }
   cartTotal.textContent = `Total Price: Ksh. ${totalPrice}`;
+  // console.log(cartTotal.textContent)
 }

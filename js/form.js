@@ -28,11 +28,8 @@ productImage.addEventListener("change",(e) => {
                 <img src="${e.target.result}" alt="image">
                
             `;
-    // imageList.appendChild(div);
   });
 
-  // console.log(imageReader.readAsDataURL(imageFile))
-  // // imageReader.readAsDataURL(imageFile);
 });
 
 //   Save individual products to Local Storage
