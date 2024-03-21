@@ -140,6 +140,13 @@ footer .submit__btn {
   align-items: center;
 }
 
+.add__btn {
+  padding: 1em 3em;
+  background: gray;
+  border: none;
+  border-radius: 3%;
+}
+
 .contact__details {
   display: flex;
   flex-direction: column;
