@@ -3,7 +3,7 @@ const productsDiv=document.querySelector(".home__products");
 const productName = document.querySelector(".product__name");
 const message = document.querySelector(".notification");
 const sucessMessage = document.querySelector(".succes__message");
-const productDescription = document.querySelector(".product__image");
+const productDescription = document.querySelector(".product__description");
 const productPrice = document.querySelector(".product__price");
 
 const productImage = document.querySelector(".product__image");
