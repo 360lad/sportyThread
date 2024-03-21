@@ -6,13 +6,13 @@ const sucessMessage = document.querySelector(".succes__message");
 const productDescription = document.querySelector(".product__description");
 const productPrice = document.querySelector(".product__price");
 
+console.log(productDescription);
 const productImage = document.querySelector(".product__image");
 const imageList = document.querySelector(".image-list");
 let imageUrl;
 let shopProducts = [];
 
 productImage.addEventListener("change",(e) => {
-  // console.log(e);
   const imageFile = productImage.files[0];
   console.log(imageFile);
   const imageReader = new FileReader();

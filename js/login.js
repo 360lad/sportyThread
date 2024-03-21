@@ -17,7 +17,7 @@ logInBtn.addEventListener("click", () => {
     }
     else if(data.password !== logInPassword.value){
         logInMessage.textContent="wrong Password***"
-        console.log("incorrect password")
+        // console.log("incorrect password")
     }
 }
 else if(!Object.values(data).includes(logInEmail.value)){

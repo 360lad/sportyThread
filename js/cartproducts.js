@@ -122,7 +122,7 @@ function updatePrices() {
       let price = parseInt(
         itemElement.querySelector(".single-price").textContent
       );
-      // console.log(price)
+      console.log(price)
       let addedPrice = quantity * price;
       itemElement.querySelector(".newPrice").textContent = addedPrice;
       totalPrice += addedPrice;
