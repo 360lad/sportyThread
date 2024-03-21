@@ -1,0 +1,46 @@
+
+  .cart-container {
+    background-color:gray;
+    width: 500px;
+    min-height: 40vh;
+    position: absolute;
+    right: 0%;
+    top:15%;
+    display: none;
+    /* left: 80%; */
+  }
+
+  .show-cart{
+    //  width: 500px; 
+    //  height: 500px;
+    display: block;
+    background-color: gray;
+  }
+  
+  .increament{
+    background-color: black;
+    color:white;
+    border:none;
+    padding: .5em;
+    margin: .5em;
+  }
+  
+  .decreament{
+    background-color: black;
+    color:white;
+    border:none;
+    padding: .5em;
+    margin: .5em;
+  }
+  
+  .cart-tally{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+  }
+
+  .shoped-product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

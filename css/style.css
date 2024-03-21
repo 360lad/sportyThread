@@ -70,7 +70,7 @@ nav {
   height: 400px;
 }
 
-.add__btn {
+.cart__btn {
   padding: 1em 3em;
   background: gray;
   border: none;
@@ -94,6 +94,50 @@ footer .submit__btn {
   background-color: #808080;
   border: none;
   border-radius: 5%;
+}
+
+.cart-container {
+  background-color: gray;
+  width: 500px;
+  min-height: 40vh;
+  position: absolute;
+  right: 0%;
+  top: 15%;
+  display: none;
+  /* left: 80%; */
+}
+
+.show-cart {
+  display: block;
+  background-color: gray;
+}
+
+.increament {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+.decreament {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+.cart-tally {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shoped-product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact__details {

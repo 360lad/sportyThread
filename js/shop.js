@@ -1,8 +1,9 @@
 
 shopProducts = JSON.parse(localStorage.getItem("shopProducts"));
-
+const productsDiv=document.querySelector(".home__products");
 // shopProducts.push(singleProduct);
 // localStorage.setItem("shopProducts", JSON.stringify(shopProducts));
+
 
 function upadateShopItems() {
   // const singleProduct = {};
@@ -10,13 +11,15 @@ function upadateShopItems() {
     shopProducts.map((singleProduct) => {
       let shopItem = document.createElement("div");
       shopItem.classList.add(".display__products");
+      console.log(singleProduct)
+
       shopItem.innerHTML = `
         
-          <img src=${singleProduct.imageUrl}">
-          <h5>${singleProduct.productName}</h5>
-          <p>${singleProduct.productDescription}</p>
-          <p>Ksh.${singleProduct.productPrice}</p>
-          <button class="add__btn">Add to cart</button>
+          <img src="${singleProduct.image}">
+          <h5>${singleProduct.name}</h5>
+          <p>${singleProduct.descrption}</p>
+          <p>Ksh.${singleProduct.price}</p>
+          <button class="cart__btn">Add to cart</button>
       `;
 
     productsDiv.append(shopItem)
