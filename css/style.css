@@ -233,6 +233,11 @@ h1 {
   margin: 2em;
 }
 
+.succes__message {
+  color: green;
+  font-size: Bolder;
+}
+
 * {
   margin: 0;
   padding: 0;
