@@ -8,7 +8,8 @@
 .home__products{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 3em;
 }
 .display__products{
@@ -16,6 +17,7 @@
     background-image:linear-gradient(-45deg,gray,#fff);
     text-align: center;
     height: 400px;
+    margin: 4em;
 
 // .display__products img{
 //     // background-color: #808080;00

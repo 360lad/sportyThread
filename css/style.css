@@ -59,7 +59,8 @@ nav {
 .home__products {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   padding: 3em;
 }
 
@@ -68,6 +69,7 @@ nav {
   background-image: linear-gradient(-45deg, gray, #fff);
   text-align: center;
   height: 400px;
+  margin: 4em;
 }
 
 .cart__btn {
@@ -171,6 +173,17 @@ footer .submit__btn {
   background: gray;
   border: none;
   border-radius: 3%;
+}
+
+.display__image {
+  width: 200px;
+  height: 200px;
+}
+.display__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .contact__details {

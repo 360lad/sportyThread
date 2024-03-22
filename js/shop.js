@@ -12,12 +12,15 @@ function upadateShopItems() {
     console.log(singleProduct);
 
     shopItem.innerHTML = `
-        
+        <div class="display__products">
+        <div class="display__image">
           <img src="${singleProduct.image}">
+          </div>
           <h5>${singleProduct.name}</h5>
           <p>${singleProduct.descrption}</p>
           <p>Ksh.${singleProduct.price}</p>
           <button class="cart__btn">Add to cart</button>
+          </div>
       `;
 
     productsDiv.append(shopItem);
