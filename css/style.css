@@ -77,9 +77,33 @@ nav {
   border-radius: 3%;
 }
 
+.welcome__info h1 {
+  color: gray;
+  font-size: 3em;
+}
+.welcome__info h3 {
+  text-align: center;
+  justify-content: center;
+}
+.welcome__info img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.welcome__info .shp__btn {
+  padding: 1em 3em;
+  background: gray;
+  border: none;
+  border-radius: 3%;
+  position: absolute;
+  top: 60%;
+  right: 50%;
+}
+
 footer {
   display: flex;
   justify-content: space-between;
+  background-color: #808080;
 }
 footer .footer__input {
   padding: 2em;
@@ -87,13 +111,15 @@ footer .footer__input {
   margin-left: 3em;
 }
 footer p {
-  margin: 1em 3em;
+  margin: 1em 2em;
+  font-size: 3em;
 }
 footer .submit__btn {
   padding: 2em;
-  background-color: #808080;
+  background-color: linear-gradient(-45deg, gray, #fff);
   border: none;
   border-radius: 5%;
+  margin-left: 0;
 }
 
 .cart-container {

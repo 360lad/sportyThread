@@ -103,7 +103,7 @@ cartSection.addEventListener("click", function (e) {
 
     // const price = currentQuantityElement.previousElementSibling.parentElement.previousElementSibling.textContent.replace("Ksh. Ksh.", "");
     // const total = currentQuantityElement.nextElementSibling.parentElement.nextElementSibling
-    }
+    } 
   }
 
   updatePrices();
